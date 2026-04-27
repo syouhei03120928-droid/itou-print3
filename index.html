@@ -8,17 +8,23 @@
 <style>
 body {
   margin:0;
-  font-family:sans-serif;
+  font-family:"Hiragino Kaku Gothic ProN", sans-serif;
+  background:#f5f7fa;
+  color:#333;
 }
 
 /* ヘッダー */
 header {
-  height:300px;
-  background:#2c5d8a;
+  height:90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0');
+  background-size:cover;
+  background-position:center;
   color:white;
   display:flex;
   align-items:center;
   justify-content:center;
+  text-align:center;
 }
 
 /* ロゴ */
@@ -40,13 +46,43 @@ header {
 
 .logo-text {
   font-size:20px;
-  font-weight:700;
-  color:white;
+  font-weight:bold;
 }
 
-/* 本文 */
+/* キャッチコピー */
+.hero h1 {
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:18px;
+  opacity:0.8;
+}
+
+/* セクション */
 section {
-  padding:40px;
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* カード */
+.card {
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom:20px;
+}
+
+/* フッター */
+footer {
+  background:#222;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -59,16 +95,31 @@ section {
     <span class="logo-text">いとう印刷</span>
   </div>
 
-  <h1>印刷で、伝わる力を。</h1>
+  <div class="hero">
+    <h1>印刷で、伝わる力を。</h1>
+    <p>福井の印刷ならお任せください</p>
+  </div>
 </header>
 
 <section>
-  <p>
-    福井県福井市花堂東1-27-2<br>
-    TEL：0776-34-8787<br>
-    MAIL：i-print@sky.plala.or.jp
-  </p>
+  <div class="card">
+    <h2>サービス</h2>
+    <p>チラシ・名刺・パンフレットなど幅広く対応しております。</p>
+  </div>
+
+  <div class="card">
+    <h2>会社情報</h2>
+    <p>
+      福井県福井市花堂東1-27-2<br>
+      TEL：0776-34-8787<br>
+      MAIL：i-print@sky.plala.or.jp
+    </p>
+  </div>
 </section>
+
+<footer>
+  © いとう印刷
+</footer>
 
 </body>
 </html>
